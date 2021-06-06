@@ -1,10 +1,10 @@
 # javascript-for-codingtest
 * * *
 ## 자바스크립트 코딩 테스트 요약
-- [1. 순열](#순열-🌷)
-- [2. 조합](#조합-🌷)
+- [1. 순열](#순열)
+- [2. 조합](#조합)
 * * *
-## 순열 🌷
+## 순열
 ```
 const getPermutations= function (arr, selectNumber) {
   const results = [];
@@ -21,7 +21,7 @@ const getPermutations= function (arr, selectNumber) {
 };
 ```
 
-## 조합 🌷
+## 조합
 ```
 const getCombinations = function (arr, selectNumber) {
   const results = [];
