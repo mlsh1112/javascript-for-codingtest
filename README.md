@@ -37,3 +37,13 @@ const getCombinations = function (arr, selectNumber) {
   return results; // 결과 담긴 results return
 }
 ```
+
+## 소수찾기
+```
+function isPrime(num){
+    for(let i=2;i*i<=num;i++){
+        if(num%i===0) return false
+    }
+    return true
+}
+```
