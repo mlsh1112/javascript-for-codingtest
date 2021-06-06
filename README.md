@@ -39,7 +39,7 @@ const getCombinations = function (arr, selectNumber) {
 }
 ```
 
-## 소수찾기
+## 소수 찾기
 ```
 function isPrime(num){
     for(let i=2;i*i<=num;i++){
