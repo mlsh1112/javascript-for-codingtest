@@ -4,6 +4,7 @@
 - [1. 순열](#순열)
 - [2. 조합](#조합)
 - [3. 소수 찾기](#소수-찾기)
+- [4. 행과 열 바꾸기](#행과-열-바꾸기)
 * * *
 ## 순열
 ```
@@ -47,4 +48,12 @@ function isPrime(num){
     }
     return true
 }
+```
+
+## 행과 열 바꾸기
+```
+const transpose = matrix => matrix.reduce(
+  (result, row) => row.map((e, i) => [...(result[i] || []), e]),
+  []
+);
 ```
