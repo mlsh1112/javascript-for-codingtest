@@ -5,6 +5,8 @@
 - [2. 조합](#조합)
 - [3. 소수 찾기](#소수-찾기)
 - [4. 행과 열 바꾸기](#행과-열-바꾸기)
+- [5. 배열 값 더하기](#배열-값-더하기)
+- [6. 진수](#진수)
 * * *
 ## 순열
 ```
@@ -57,3 +59,22 @@ const transpose = matrix => matrix.reduce(
   []
 );
 ```
+
+## 배열 값 더하기
+```
+[].reduce((a, b) => a + b)
+```
+
+## 진수
+### 10진수 -> 16진수
+var hex = dec.toString(16)
+### 10진수 -> 2진수
+var bin = dec.toString(2)
+### 16진수 -> 10진수
+var dec = parseInt(hex, 16)
+### 16진수 -> 2진수
+var dec = parseInt(hex, 16).toString(2)
+### 2진수 -> 10진수
+var dec = parseInt(bin, 2)
+### 2진수 -> 16진수
+var hex = parseInt(bin, 2).toString(16)
