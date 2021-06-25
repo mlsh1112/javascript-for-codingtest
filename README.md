@@ -66,15 +66,15 @@ const transpose = matrix => matrix.reduce(
 ```
 
 ## 진수
-### 10진수 -> 16진수
+#### 10진수 -> 16진수
 var hex = dec.toString(16)
-### 10진수 -> 2진수
+#### 10진수 -> 2진수
 var bin = dec.toString(2)
-### 16진수 -> 10진수
+#### 16진수 -> 10진수
 var dec = parseInt(hex, 16)
-### 16진수 -> 2진수
+#### 16진수 -> 2진수
 var dec = parseInt(hex, 16).toString(2)
-### 2진수 -> 10진수
+#### 2진수 -> 10진수
 var dec = parseInt(bin, 2)
-### 2진수 -> 16진수
+#### 2진수 -> 16진수
 var hex = parseInt(bin, 2).toString(16)
