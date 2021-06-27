@@ -90,3 +90,21 @@ var dec = parseInt(bin, 2)
 ```
 var hex = parseInt(bin, 2).toString(16)
 ```
+
+## 약수 개수 구하기
+```
+function countPrime(n){
+    let i=1
+    let result=0
+
+    while(i*i<n){
+        if(n%i===0)
+            result+=2
+        i+=1
+    }
+    if(i*i===n)
+        result++
+
+    return result
+}
+```
