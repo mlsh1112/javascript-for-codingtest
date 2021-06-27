@@ -8,6 +8,7 @@
 - [5. 배열 값 더하기](#배열-값-더하기)
 - [6. 진수](#진수)
 - [7. 약수 개수 구하기](#약수-개수-구하기)
+- [8. 이진 탐색](#이진-탐색)
 * * *
 ## 순열
 ```
@@ -109,3 +110,25 @@ function countPrime(n){
     return result
 }
 ```
+
+## 이진탐색
+```
+function binarySearch(A,x){
+    let n=A.length
+    let beg=0
+    let end=n-1
+    result=-1
+    while(beg<=end){
+        mid=Math.floor((beg+end)/2)
+        if(A[beg]<=x){
+            beg=mid+1
+            result=mid
+        }
+        else
+            end=mid-1
+    }
+
+    return result
+}
+```
+
