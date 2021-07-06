@@ -111,7 +111,7 @@ function countPrime(n){
 }
 ```
 
-## 이진탐색
+## 이진 탐색
 ```
 function binarySearch(A,x){
     let n=A.length
