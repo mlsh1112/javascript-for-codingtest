@@ -131,4 +131,35 @@ function binarySearch(A,x){
     return result
 }
 ```
+## 집합
+```
+// 합집합
+let unionSet = new Set([...setA, ...setB])
 
+for (let value of unionSet) {
+  console.log(value);
+}
+// 차례대로 1, 2, 3, 4, 5, 6, 7, 8 출력
+
+
+// 교집합
+let intersectionSet = new Set(
+  [...setA].filter(v => setB.has(v))
+);
+
+for (let value of intersectionSet) {
+  console.log(value);
+}
+// 차례대로 4, 5 출력
+
+
+// 차집합
+let differenceSet = new Set(
+  [...setA].filter(v => !setB.has(v))
+);
+
+for (let value of differenceSet) {
+  console.log(value);
+}
+// 차례대로 1, 2, 3 출력
+```
