@@ -160,3 +160,34 @@ for (let value of differenceSet) {
 }
 // 차례대로 1, 2, 3 출력
 ```
+## 우선순위 큐
+```
+class PriorityQueue {
+    constructor() {
+        this.memory = [];
+        this.length = 0;
+    }
+    
+    push(newItem) {
+        this.length++;
+        
+        let isAdded = false;
+        
+        for(let i = 0 ; i < this.memory.length ; ++i){
+            if(this.memory[i].weight > newItem.weight){
+                this.memory.splice(i, 0, newItem);
+                isAdded = true;
+                break;
+            } 
+        }        
+        
+        if(!isAdded) this.memory.push(newItem);
+    }
+    
+    pop() {
+        this.length--;
+        return this.memory.shift();
+    }
+
+}
+```
