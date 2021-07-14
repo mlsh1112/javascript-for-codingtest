@@ -114,22 +114,18 @@ function countPrime(n){
 
 ## 이진 탐색
 ```
-function binarySearch(A,x){
-    let n=A.length
-    let beg=0
-    let end=n-1
-    result=-1
-    while(beg<=end){
-        mid=Math.floor((beg+end)/2)
-        if(A[beg]<=x){
-            beg=mid+1
-            result=mid
-        }
-        else
-            end=mid-1
+function binarySearch(arr,target{
+    let start = 0
+    let end = arr.length
+    while(start<end){
+      const mid = Math.floor((start+end)/2)
+      if(arr[mid]>=target){
+        end=mid
+      }
+      else{
+        start=mid+1
+      }
     }
-
-    return result
 }
 ```
 ## 집합
