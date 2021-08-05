@@ -11,6 +11,8 @@
 - [8. 이진 탐색](#이진-탐색)
 - [9. 집합](#집합)
 - [10. 우선순위 큐](#우선순위-큐)
+- [최대공약수](#최대공약수)
+- [최소공배수](#최소공배수)
 * * *
 ## 순열
 ```
@@ -190,5 +192,17 @@ class PriorityQueue {
         return this.memory.shift();
     }
 
+}
+```
+## 최대공약수
+```
+function gcd(minNum, maxNum){
+  return (minNum % maxNum) === 0 ? maxNum : gcd(maxNum, minNum % maxNum);
+}
+```
+## 최소공배수
+```
+function lcm(minNum, maxNum){
+  return minNum * maxNum / gcd(minNum, maxNum);
 }
 ```
