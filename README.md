@@ -206,3 +206,7 @@ function lcm(minNum, maxNum){
   return minNum * maxNum / gcd(minNum, maxNum);
 }
 ```
+## 2차원 배열
+```
+const graph = Array.from({ length: n + 1 }, () => Array(n + 1).fill(false));
+```
